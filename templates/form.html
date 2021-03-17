@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!-- <p>#3) Fix this form so it submits to the route /results.</p> -->
+
+<p>What kind of message would you like?</p>
+<form action="/results">
+  <input type="checkbox" value = "cheery" name="mood"> Cheery<br>
+  <input type="checkbox" value = "dreary" name="mood"> Dreary<br>
+  <input type="checkbox" value = "honest" name="mood"> Honest<br>
+  <input type = "submit">
+</form>
+
+{% endblock %}
